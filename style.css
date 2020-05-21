@@ -6,7 +6,7 @@
 
 body {
     font-family: 'Lato', sans-serif;
-font-family: 'Roboto Mono', monospace;
+    font-family: 'Roboto Mono', monospace;
 }
 
 img {
@@ -24,7 +24,6 @@ img {
 header
 
 ---------------------------------------------*/
-
 .header {
     display: flex;
     flex-wrap: wrap;
@@ -56,20 +55,22 @@ li a{
 }
 
 @media screen and (max-width: 768px){
-
     h1 {
-        padding: 16px 0;
+        padding: 20px 0;
+        margin: -35px 0 -15px 0;
     }
 
     .header_menu{
         width: 100%;
+        margin: 0px;
     }
 
     ul {
-        padding: 0;
+        padding: 0px;
     }
     li {
         width: 50%;
+        padding: 5px 0;
         border: 1px solid #d8d8d8d8;
     }
 }
@@ -79,11 +80,12 @@ li a{
 profile
 
 ---------------------------------------------*/
+
 .profile_area {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    margin-bottom: 40px;
+    margin-bottom: 40px ;
 }
 
 .profile_area-img {
@@ -171,6 +173,20 @@ production
     margin-bottom: 40px;
 }
 
+.production_tag {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 0;
+}
+
+@media screen and (max-width: 768px){
+    .production_tag {
+        text-align: center;
+    }
+}
+
 /*--------------------------------------------
 
 contact
@@ -218,6 +234,41 @@ button {
     }
     
 }
+
+/*--------------------------------------------
+
+PageTop Button
+
+---------------------------------------------*/
+
+#page_top{
+    position: fixed;
+    opacity: 0.8;
+    right: 0 ;
+    bottom: 0 ;
+    color: #3d3d3dd8;
+    margin-right: 10px;
+}
+
+ #page_top a:hover {
+    opacity: 0.6;
+}
+
+#page_top a {
+    position: relative;
+    display: block;
+    margin-bottom: -15px;
+    text-decoration: none;
+    color: #3d3d3dd8;
+    font-size: 40px;
+}
+
+#page_top p {
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 0;
+}
+
 
 /*--------------------------------------------
 

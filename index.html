@@ -18,10 +18,10 @@
                 <div class="header_menu">
                     <nav>
                         <ul>
-                            <li><a href="" class="profile">Profile</a></li>
-                            <li><a href="" class="skill">Skill</a></li>
-                            <li><a href="" class="production">Production</a></li>
-                            <li><a href="" class="contact">Contact</a></li>
+                            <li><a href="#profile_top" class="profile">Profile</a></li>
+                            <li><a href="#skill_top" class="skill">Skill</a></li>
+                            <li><a href="#production_top" class="production">Production</a></li>
+                            <li><a href="#contact_top" class="contact">Contact</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -31,7 +31,7 @@
     <main>
         <div class="container">
             <section id="profile">
-                <h2 class="title">Profile</h2>
+                <h2 class="title" id="profile_top">Profile</h2>
                 <div class="profile_area">
                     <div class="profile_area-img">
                         <img src="img/portfolio_profile_img2.gif" alt="">
@@ -68,9 +68,8 @@
                     </div>
                 </div>
             </section>
-
             <section id="skill">
-                <h2 class="title">Skill</h2>
+                <h2 class="title" id="skill_top">Skill</h2>
                 <div class="row">
                     <div class="col-md-4 col-xs-12">
                         <h3>Coding</h3>
@@ -120,8 +119,8 @@
                 </div>
             </section>
             <section id="production">
-                <h2 class="title">Production</h2>
-                <div class="row">
+                <h2 class="title" id="production_top">Production</h2>
+                <div class="production_tag">
                     <div class="col-md-4 col-xs-12">
                         <img src="img/portfolio_production_img.gif" alt="">
                     </div>
@@ -143,7 +142,7 @@
                 </div>
             </section>
             <section id="contact">
-                <h2 class="title">Contact</h2>
+                <h2 class="title" id="contact_top">Contact</h2>
                     <div class="form">
                         <!-- class, action, methodを変更しないでください -->
                         <form class="formrun" action="https://form.run/api/v1/r/fp7tm7uoo48r6yucu5ft5is9" method="post">
@@ -179,8 +178,17 @@
         </div>
     </main>
 
+    <div id="page_top">
+        <a href="#">
+            <i class="fas fa-arrow-circle-up"></i>
+            
+        </a>
+        <p>Top</p>
+    </div>
+
     <footer>
         &copy; 2020 Toshihiro Higa
     </footer>
+
 </body>
 </html>
